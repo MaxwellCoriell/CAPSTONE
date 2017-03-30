@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="comic-body">
+        <div class="comic-heading row">
+          <div class="col-sm-3 col-md-3">
+            <img class="comic-image img-rounded" ng-src="{{comicCtrl.comic.thumbnail.path+'/portrait_xlarge.'+comicCtrl.comic.thumbnail.extension}}">
+          </div>
+          <div class="comic-info col-sm-9 col-md-9">
+              <h2>{{comicCtrl.comic.title}}</h2>
+              <h4 ng-show='comicCtrl.comic.format.length > 0'>Format : {{comicCtrl.comic.format}}</h4>
+              <h4 ng-show='comicCtrl.comic.prices.length > 0'>Price : ${{comicCtrl.comic.prices[0].price}} USD</h4>
+              <h4>Number of pages : {{comicCtrl.comic.pageCount}}</h4>
+              <div class="comic-creators-wrapper row">
+                <h4 class='col-xs-3 col-sm-3'>Creators: </h4>
+                <ul class="comic-creators col-xs-9 col-sm-9">
+                  <li class="creator" ng-repeat='creator in comicCtrl.creators'>
+                    <a href="/creator/{{creator.id}}">
+                      <div class="creator-title">
+                        <p>{{creator.fullName}}</p>
+                      </div>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div ng-show='comicCtrl.comic.description.length >0' class="comic-desc-wrapper row">
+        <div class="comic-desc col-md-12">
+          <h4>Description</h4>
+          <p>{{comicCtrl.comic.description}}</p>
+          <!-- THIS DOESN"T WORK YET -->
+          <!-- <br>
+          <h3><a ng-href="{{comicCtrl.comic.urls.url}}" target="_blank">View on Marvel.com</a></h3> -->
+      </div>
+    </div>
+  </div>
+</div>

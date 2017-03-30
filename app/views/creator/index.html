@@ -1,0 +1,28 @@
+<search-alphabet attr='creators'></search-alphabet>
+<
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div>
+        <input class="search" type="text" ng-model="search.fullName" placeholder="Search Creators in this set">
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="row item-list">
+        <div class="col-xs-4 col-sm-3 col-md-2" ng-show='creators.values.length >0' ng-repeat="creator in creators.values | filter:search">
+          <a href="/creator/{{creator.id}}">
+            <img class="img-rounded" ng-src="{{creator.thumbnail.path+'/portrait_xlarge.'+creator.thumbnail.extension}}" width="100%"/>
+
+            <div class="text-center item-title">
+              {{creator.fullName}}
+            </div>
+          </a>
+        </div>
+        <div ng-hide='(creators.values | filter:search).length >0' class="empty">
+          <p class='text-center'>No results found</p>
+        </div>
+      </div>
+      <button class="btn btn-block btn-primary" ng-show='(creators.values | filter:search).length > 0' ng-hide='isFilterAlphabet' ng-click="loadMore()">Load more creators</button>
+    </div>
+  </div>
+</div>

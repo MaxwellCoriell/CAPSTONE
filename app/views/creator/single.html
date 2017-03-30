@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="comic-body">
+        <div class="comic-heading row">
+              <h2 class='text-center'>{{creatorCtrl.creator.fullName}}</h2>
+        </div>
+        <div class="comic-creators-wrapper">
+          <h3>Participated in</h3>
+          <div class="row item-list">
+            <div class="col-xs-6 col-sm-3 col-md-2" ng-show='creatorCtrl.comics.length >0' ng-repeat="comic in creatorCtrl.comics">
+              <a href="/comic/{{comic.id}}">
+                <img class="img-rounded" ng-src="{{comic.thumbnail.path+'/portrait_xlarge.'+comic.thumbnail.extension}}" width="100%"/>
+                <div class="role" ng-show='comic.creators.items.length >0'></div>
+                <div class="text-center item-title">
+                  {{comic.title}}
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
