@@ -11,14 +11,28 @@ Search Comics and Creators using the Marvel API
 5. search characters and have a single page for them as well
 6. make a branch, so that you don't have to sign in
 
+## Libraries required
+
+To run this app properly, you need to install [nodeJS](https://nodejs.org/en/download/) and bower[https://bower.io/#install-bower](https://bower.io/#install-bower).
+
 ## Installation
 
 TODO: Describe the installation process
 
+1. Clone the Repo, or Download a .zip
+2. Run the Following:
+```
+npm install
+bower install
+```
+
+3. Run ```http-server```
+4. Launch in Your Browser with localhost
+    **NOTE:** *Do NOT use Chrome Incognito, or a similar masking browser, as it will make the API calls not work.*
 
 ## Contributing
 
-1. Fork it!
+1. Fork or Clone it!
 2. Create your feature branch: `git checkout -b <your branch name>`
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin <your branch name>`
@@ -28,9 +42,9 @@ TODO: Describe the installation process
 ## Credits
 
 Thank you to the following people and their tutorials on how to use the Marvel API:
-1. [Example call to the Marvel API from js client w/ JQuery](https://gist.github.com/tleen/7a686d43b0edc60ba35a) by user @tleen
-2. [Examples of the Marvel API](https://www.raymondcamden.com/2014/02/02/Examples-of-the-Marvel-API/) by [Raymond Camden](https://www.raymondcamden.com)
-3. [Getting the Avengers with Marvel Comics API](https://www.infoq.com/news/2014/02/marvel-comics-api)
+* [Example call to the Marvel API from js client w/ JQuery](https://gist.github.com/tleen/7a686d43b0edc60ba35a) by user @tleen
+* [Examples of the Marvel API](https://www.raymondcamden.com/2014/02/02/Examples-of-the-Marvel-API/) by [Raymond Camden](https://www.raymondcamden.com)
+* [Getting the Avengers with Marvel Comics API](https://www.infoq.com/news/2014/02/marvel-comics-api)
 
 
 
