@@ -17,8 +17,6 @@ To run this app properly, you need to install [nodeJS](https://nodejs.org/en/dow
 
 ## Installation
 
-TODO: Describe the installation process
-
 1. Clone the Repo, or Download a .zip
 2. Run the Following:
 ```
