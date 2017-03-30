@@ -1,0 +1,14 @@
+### Security Stuff ###
+app/values/marvel-getter.js
+app/values/fb-getter.js
+
+### Grunt and Node Stuff ###
+lib/bower_components
+lib/node_modules
+lib/npm-debug.log
+lib/.sass-cache
+
+### macOS Stuff ###
+*.DS_Store
+*_notes/
+Thumbs.db
