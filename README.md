@@ -14,9 +14,6 @@ Search Comics and Creators using the Marvel API
 
 To run this app properly, you need to install [nodeJS](https://nodejs.org/en/download/) and [bower](https://bower.io/#install-bower).
 
-## Libraries required
-
-To run this app properly, you need to install [nodeJS](https://nodejs.org/en/download/) and bower[https://bower.io/#install-bower](https://bower.io/#install-bower).
 
 ## Installation
 
