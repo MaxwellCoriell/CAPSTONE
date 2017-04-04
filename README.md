@@ -7,9 +7,12 @@ Search Comics and Creators using the Marvel API
 1. Make a splash page/ user sign-in area
 2. Require sign-in to access site
 3. have a branch, so that you don't have to sign in
-4. add a link to the MarvelDB from single comic views
-5. search characters and have a single page for them as well
-6. make a branch, so that you don't have to sign in
+~~4. add a link to the MarvelDB from single comic views~~
+5. search characters and have a single page for them as well _(in progress)_
+
+## Libraries required
+
+To run this app properly, you need to install [nodeJS](https://nodejs.org/en/download/) and [bower](https://bower.io/#install-bower).
 
 ## Libraries required
 
@@ -23,10 +26,10 @@ To run this app properly, you need to install [nodeJS](https://nodejs.org/en/dow
 npm install
 bower install
 ```
-
 3. Run ```http-server```
 4. Launch in Your Browser with localhost
-    **NOTE:** *Do NOT use Chrome Incognito, or a similar masking browser, as it will make the API calls not work.*
+
+**NOTE:** *Do NOT use Chrome Incognito, or a similar masking browser, as it will make the API calls not work.*
 
 ## Contributing
 
