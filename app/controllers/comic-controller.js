@@ -3,7 +3,7 @@
 angular.module('MarvelApp')
   .controller('ComicController', ['$scope', '$location', '$routeParams','MarvelComics',  function($scope, $location, $routeParams, MarvelComics){
     var controller = this;
-    var counter = 0;
+    var counter = 5;
 
     $scope.loadMore = function(){
       counter += 24;
