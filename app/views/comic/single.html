@@ -8,6 +8,7 @@
           </div>
           <div class="comic-info col-sm-9 col-md-9">
               <h2>{{comicCtrl.comic.title}}</h2>
+              <h4 ng-show='comicCtrl.comic.format.length > 0'>On Sale Date : {{comicCtrl.comic.dates[0].date | limitTo:10}}</h4>
               <h4 ng-show='comicCtrl.comic.format.length > 0'>Format : {{comicCtrl.comic.format}}</h4>
               <h4 ng-show='comicCtrl.comic.prices.length > 0'>Price : ${{comicCtrl.comic.prices[0].price}} USD</h4>
               <h4>Number of pages : {{comicCtrl.comic.pageCount}}</h4>
