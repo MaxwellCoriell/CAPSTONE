@@ -4,11 +4,8 @@ NSS Front-End Capstone.... Take 2!
 Search Comics and Creators using the Marvel API
 
 ## TODO: 
-1. Make a splash page/ user sign-in area
-2. Require sign-in to access site
-3. have a branch, so that you don't have to sign in
-4. ~~add a link to the MarvelDB from single comic views~~
-5. search characters and have a single page for them as well _(in progress)_
+1. ~~add a link to the MarvelDB from single comic views~~
+2. search characters and have a single page for them as well _(in progress)_
 
 ## Libraries required
 
