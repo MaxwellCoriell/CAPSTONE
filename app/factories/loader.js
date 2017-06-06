@@ -19,7 +19,7 @@ angular.module('MarvelApp')
 
         return response || $q.when(response);
       },
-      responseError: function(respone) {
+      responseError: function(response) {
         if(!(--numLoadings)) {
           //Hide loader
           $rootScope.$broadcast('loader_hide');

@@ -9,6 +9,7 @@ angular.module('MarvelApp')
       counter += 24;
       MarvelComics.comics.get({"limit": 24, "offset": counter, "titleStartsWith": MarvelComics.letter}, function(comics) {
         MarvelComics.values = MarvelComics.values.concat(comics.data.results);
+        console.log("HEY HEY HEY: ", MarvelComics.values);
       });
     };
 
