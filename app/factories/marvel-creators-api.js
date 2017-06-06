@@ -6,8 +6,8 @@ angular.module('MarvelApp')
     return {
       letter: undefined,
       values: [],
-      creators: $resource('http://gateway.marvel.com/v1/public/creators/:id', {'apikey': apikey} ),
-      comicsByCreator : $resource('http://gateway.marvel.com/v1/public/creators/:id/comics', {'apikey': apikey} )
+      creators: $resource('https://gateway.marvel.com/v1/public/creators/:id', {'apikey': apikey} ),
+      comicsByCreator : $resource('https://gateway.marvel.com/v1/public/creators/:id/comics', {'apikey': apikey} )
     };
 
   }]);

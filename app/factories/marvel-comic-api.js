@@ -7,7 +7,7 @@ angular.module('MarvelApp')
     return {
       letter : undefined,
       values : [], // sharing data between controllers
-      comics : $resource('http://gateway.marvel.com/v1/public/comics/:id', {'apikey': apikey} ),
-      creatorsByComic : $resource('http://gateway.marvel.com/v1/public/comics/:id/creators', {'apikey': apikey} )
+      comics : $resource('https://gateway.marvel.com/v1/public/comics/:id', {'apikey': apikey} ),
+      creatorsByComic : $resource('https://gateway.marvel.com/v1/public/comics/:id/creators', {'apikey': apikey} )
     };
 }]);
