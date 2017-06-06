@@ -10,17 +10,17 @@
               <h2>{{comicCtrl.comic.title}}</h2>
               <h4 ng-show='comicCtrl.comic.format.length > 0'>On Sale Date : {{comicCtrl.comic.dates[0].date | limitTo:10}}</h4>
               <h4 ng-show='comicCtrl.comic.format.length > 0'>Format : {{comicCtrl.comic.format}}</h4>
-              <h4 ng-show='comicCtrl.comic.prices.length > 0'>Price : ${{comicCtrl.comic.prices[0].price}} USD</h4>
+              <h4 ng-show='comicCtrl.comic.prices.length > 0'>Price : ${{comicCtrl.comic.prices[0].price}}</h4>
               <h4>Number of pages : {{comicCtrl.comic.pageCount}}</h4>
               <div class="comic-creators-wrapper row">
                 <h4 class='col-xs-3 col-sm-3'>Creators: </h4>
                 <ul class="comic-creators col-xs-9 col-sm-9">
                   <li class="creator" ng-repeat='creator in comicCtrl.creators'>
-                    <a href="/creator/{{creator.id}}">
-                      <div class="creator-title">
+                    <div class="creator-title">
+                      <a href="/creator/{{creator.id}}">
                         <p>{{creator.fullName}}</p>
-                      </div>
-                    </a>
+                      </a>  
+                    </div>
                   </li>
               </ul>
             </div>
